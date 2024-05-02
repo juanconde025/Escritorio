@@ -12,7 +12,7 @@ print(f"La primera palabra es: {current_word}")
 
 while True:
     
-    player_input = input("Jugador 1, ingresa una palabra: ")
+    player_input = input("Jugador 1, ingresa una palabra: ").lower()
 
     if player_input == "salir":
     
