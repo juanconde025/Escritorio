@@ -20,7 +20,7 @@ while(True):
    
     
     promedio = contador // dividendo
-    print(promedio)
+    print(f"El promedio de recursos humanos: {promedio} empleados")
 
  elif option == "3": 
     for llave, valor in Empresas.items():
