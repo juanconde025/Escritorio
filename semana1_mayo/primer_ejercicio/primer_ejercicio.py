@@ -8,6 +8,35 @@ if option == "1":
         if valor[0]["empleados"] > 10:
             print(llave)
             print (f"Tiene ",  valor[0]["empleados"], " empleados")
+elif option == "2":
+    for llave, valor in Empresas.items():  
+        for j in llave:
+            valores = str(valor[0]["empleados"])
+            j += valores 
+    suma = int(j)
+    suma -= 2
+    promedio = suma//5
+    print(promedio)
+elif option == "3": 
+    for llave, valor in Empresas.items():
+        if valor[3]["empleados"] > valor[2]["empleados"]:
+            valor[2]["empleados"] = valor[2]["empleados"] * 2
+            if valor[3]["empleados"] > valor[2]["empleados"]:
+                print(f"La {llave} tiene el doble o mas empleados en operaciones que en ventas")
+elif option == "4":
+    
+    del Empresas["Empresa 1"]
+    Empresas["departamento_RH"] = [{"empleados":48}]
+  
+    del Empresas["Empresa 2"]
+    Empresas["departamento_Contabilidad"] = [{"empleados":82}]
 
+    del Empresas["Empresa 3"]
+    Empresas["departamento_Ventas"] = [{"empleados":140}]
 
+    del Empresas["Empresa 4"]
+    Empresas["departamento_Operaciones"] = [{"empleados":248}]
 
+    del Empresas["Empresa 5"]
+
+    print(Empresas)
