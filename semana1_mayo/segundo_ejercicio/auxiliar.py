@@ -1,22 +1,20 @@
-def numeros_perfectos(numero):
+def perfectos():
+    numeros_perfectos_encontrados = []
+    numero = 2
 
-    suma_divisores = 0
+    while len(numeros_perfectos_encontrados) < 4:
+        suma_divisores = 0
 
-    for i in range(1, numero):
-        if numero % i == 0:
-            suma_divisores += i
+        for i in range(1, numero):
+            if numero % i == 0:
+                suma_divisores += i
 
-    if suma_divisores == numero:
+        if suma_divisores == numero:
             numeros_perfectos_encontrados.append(numero)
 
-    return numeros_perfectos_encontrados
+        numero += 1
 
-numeros_perfectos_encontrados = []
-numero = 2
+    print("Los primeros 4 números perfectos son:")
+    print(numeros_perfectos_encontrados)
 
-while len(numeros_perfectos_encontrados) < 4:
-    result = numeros_perfectos(numero)
-    numero += 1
 
-print("Los primeros 4 números perfectos son:")
-print(result)
