@@ -16,9 +16,8 @@ while(True):
          for k in valor:
             if k["departamento"] == "Recursos Humanos":
               valores = (k["empleados"])
-              print(k)
               contador += valores 
-              print("total empleados ",contador) 
+   
     
     promedio = contador // dividendo
     print(promedio)
