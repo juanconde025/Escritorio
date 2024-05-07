@@ -9,14 +9,20 @@ while(True):
             print(llave)
             print (f"Tiene ",  valor[0]["empleados"], " empleados")
  elif option == "2":
+    contador = 0
+    dividendo = 0
     for llave, valor in Empresas.items():  
-        for j in llave:
-            valores = str(valor[0]["empleados"])
-            j += valores 
-    suma = int(j)
-    suma -= 2
-    promedio = suma//5
+         dividendo += 1
+         for k in valor:
+            if k["departamento"] == "Recursos Humanos":
+              valores = (k["empleados"])
+              print(k)
+              contador += valores 
+              print("total empleados ",contador) 
+    
+    promedio = contador // dividendo
     print(promedio)
+
  elif option == "3": 
     for llave, valor in Empresas.items():
         if valor[3]["empleados"] > valor[2]["empleados"]:
