@@ -2,6 +2,7 @@
 from datos import *
 from menu import *
 from participantes import *
+from eventos import *
 
 #Constants
 RUTA_BASE_DE_DATOS = "eventos.json"
@@ -18,7 +19,7 @@ while True:
     elif opc == 3:
         datos = pagar_participante(datos)
     elif opc == 4:
-        print("opcion 4")
+        datos = registrar_evento(datos)
     elif opc == 5:
         print("opcion 5")
     elif opc == 6:

@@ -5,6 +5,12 @@
             "locacion": "Parque",
             "dia": 5,
             "realizado": true
+        },
+        {
+            "nombre": "Final de champions",
+            "locacion": "Londres",
+            "dia": "16",
+            "realizado": false
         }
     ],
     "participantes": [
